@@ -16,7 +16,7 @@ function Projects() {
 
   async function handleGetProjects(page) {
     try {
-      const response = await axios.get(`http://localhost:2001/api/v1/project/get?page=${page}`);
+      const response = await axios.get(`https://my-portfolio-backend-a399.onrender.com/api/v1/project/get?page=${page}`);
       setProjects(response.data.projects);
       setCurrentPage(response.data.currentPage);
       setTotalPages(response.data.totalPages);

@@ -14,7 +14,7 @@ function ProjectDetails() {
 
     async function handleSingleProject() {
         try {
-            const response = await axios.get(`http://localhost:2001/api/v1/project/get/${id}`);
+            const response = await axios.get(`https://my-portfolio-backend-a399.onrender.com/api/v1/project/get/${id}`);
             setProject(response.data.project);
             console.log(response.data.project);
         } catch (error) {

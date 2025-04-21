@@ -52,7 +52,7 @@ function AddProject() {
       featuresArray.forEach(feature => formData.append("features[]", feature));
       techStackArray.forEach(tech => formData.append("techStack[]", tech));
 
-      const response = await axios.post("http://localhost:2001/api/v1/project/add", formData);
+      const response = await axios.post("https://my-portfolio-backend-a399.onrender.com/api/v1/project/add", formData);
       setMessage(response.data.message);
 
       setData({

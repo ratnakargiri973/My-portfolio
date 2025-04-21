@@ -43,7 +43,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:2001/api/v1/contact/send', formData);
+      const res = await axios.post('https://my-portfolio-backend-a399.onrender.com/api/v1/contact/send', formData);
       setSuccessMsg(res.data.message);
       setFormData({ name: '', email: '', message: '' });
     } catch (err) {
