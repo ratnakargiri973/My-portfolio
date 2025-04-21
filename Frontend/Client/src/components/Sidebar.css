@@ -1,0 +1,191 @@
+/* Sidebar Base Styles */
+.sidebar-content {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #404141, #596b6b);
+    color: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 40;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.sidebar-open {
+    transform: translateX(0);
+    left: 0;
+}
+
+/* Menu Button (Hamburger) */
+.menu-button {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 50;
+    background: rgb(111, 121, 121);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Close Button Inside Sidebar */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #4a90e2;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Navigation Links */
+.nav-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.nav-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item.active {
+    background: #4a90e2;
+}
+
+/* Hide sidebar initially only for small screens */
+@media (max-width: 1024px) {
+    .sidebar-content {
+        left: -100%;
+    }
+}
+
+/* Show sidebar by default on larger screens */
+@media (min-width: 1025px) {
+    .sidebar-content {
+        left: 0;
+        transform: none;
+    }
+    ul {
+        font-size:large;
+    }
+
+    /* Hide menu button for large screens */
+    .menu-button {
+        display: none;
+    }
+}
+
+/* Sidebar Open for Mobile */
+.sidebar-open {
+    transform: translateX(0);
+    left: 0;
+}
+
+/* Menu Button (Hamburger) */
+.menu-button {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 50;
+    background: gray;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 1024px) {
+    .sidebar-content {
+        width: 50%;
+    }
+    ul {
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar-content {
+        width: 70%;
+        left: -100%;
+    }
+    .sidebar-open {
+        transform: translateX(0);
+        left: 0;
+    }
+}
+@media (max-width: 480px) {
+    .sidebar-content {
+        width: 80%;
+        left: -100%;
+    }
+    .sidebar-open {
+        transform: translateX(0);
+        left: 0;
+    }
+}

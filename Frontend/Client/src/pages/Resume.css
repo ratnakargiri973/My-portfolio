@@ -1,0 +1,213 @@
+/* General Styling */
+.resume-wrapper {
+    margin-left: 20%;
+    padding: 40px;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-wrapper h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #007bff;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.head h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contact span {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.contact span label {
+    font-weight: bold;
+}
+
+.contact span a {
+    border-bottom: 1px solid #007bff;
+    color: #007bff;
+}
+
+/* Sections Styling */
+.certification, .projects, .skills-content, .education, .achievement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid gray;
+}
+
+ .projects h3, .skills-content h3, .education h3, .achievement h3 {
+    font-size: 1.5rem;
+    font-weight: bold;   
+}
+
+.certification .title a, .project span a {
+    color: #007bff;
+    font-size: 0.9rem;
+}
+.certification .title h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.certification .title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.certification h4{
+    font-weight: bold;
+}
+.certification ul li{
+    list-style: disc;
+    font-size: 1rem;
+}
+.certification ul{
+    padding-left: 20px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.project .name{
+   display: flex;
+   align-items: center;
+   gap: 3px;
+   font-weight: bold;
+}
+.project ul li, .skills-content ul li, .achievement ul li {
+    font-size: 1rem;
+    list-style: disc;
+}
+.project ul, .skills-content ul, .achievement ul{
+    padding-left: 20px;
+}
+.project ul li p span{
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.skills-content ul li label {
+    font-weight: bold;
+}
+.skills-content ul li span{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.education table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.education th, .education td {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 10px;
+}
+
+.Btn {
+    display: flex;
+    justify-content: center;
+}
+
+.dwnd-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.dwnd-btn:hover {
+    background-color: #0567d0;
+    transform: scale(0.96);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .resume-wrapper {
+        padding: 30px;
+        margin-left: 0;
+    }
+    
+    .head {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-wrapper {
+        padding: 20px;
+        margin-left: 0;
+    }
+    
+    .head h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .education th, .education td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .skills-content ul li span{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-wrapper {
+        padding: 15px;
+        margin-left: 0;
+    }
+    
+    .head h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contact span {
+        flex-direction: column;
+    }
+    
+    .certification ul li, .project ul li, .skills-content ul li, .achievement ul li {
+        font-size: 0.9rem;
+    }
+    
+    .education th, .education td {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+    
+    .dwnd-btn {
+        width: 100%;
+    }
+}

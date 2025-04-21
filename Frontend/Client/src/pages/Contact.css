@@ -1,0 +1,75 @@
+.contact-wrapper {
+    margin-left: 20%;
+    max-width: 1280px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    transition: all 0.3s ease-in-out;
+    background-image: url('https://img.freepik.com/premium-photo/old-red-tube-hanging-wire-gray-background_180633-140.jpg?ga=GA1.1.276783253.1732774047&semt=ais_country_boost&w=740');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 2rem;
+    background-image: linear-gradient(to bottom, transparent, #56bba8);
+    transition: all 0.3s ease-in-out; 
+    max-width: 900px;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.contact:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border-color: #3498db; 
+}
+
+.contact b {
+    color: #3498db;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-wrapper {
+        padding: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+        padding: 40px;
+    }
+    .contact-form{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-wrapper {
+        padding: 15px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .contact-form{
+        flex-direction: column;
+    }
+}

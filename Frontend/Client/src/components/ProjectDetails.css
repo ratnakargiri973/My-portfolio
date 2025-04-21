@@ -1,0 +1,231 @@
+/* Wrapper styling */
+.details-wrapper {
+    margin-left: 20%;
+    padding: 40px;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    background-image: url('https://img.freepik.com/free-vector/office-interior-open-space-flat-design-vector-illustration-businessmen-talking-modern-meeting-room-conference-hall_126523-3102.jpg?ga=GA1.1.276783253.1732774047&semt=ais_hybrid&w=740');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Project details card */
+.details {
+    width: 90%;
+    max-width: 800px;
+    padding: 25px;
+    background-image: linear-gradient(to bottom, transparent, rgb(167, 165, 91));
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Project image */
+.project-image {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+}
+
+/* Project content */
+.project-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-content h1 {
+    font-size: 2.2rem;
+    color: #0d9898;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    background-color: pink;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Features section */
+.features {
+    background: #f1f3f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.features h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    background: #5ebc6c;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #444;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+}
+
+.features li:hover {
+    transform: translateX(5px);
+}
+
+/* Tech stack */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.tech-stack h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tech-stack span {
+    background-color: #27a1ca;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-stack span:hover {
+    transform: scale(1.1);
+}
+
+/* Project links */
+.project-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.project-links a:nth-child(1) {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+.project-links a:nth-child(1):hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: translateY(-3px);
+}
+
+.project-links a:nth-child(2) {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+}
+
+.project-links a:nth-child(2):hover {
+    background: linear-gradient(135deg, #1e7e34, #155d27);
+    transform: translateY(-3px);
+}
+
+/* Back button */
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .details-wrapper {
+        padding: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .details {
+        width: 100%;
+    }
+
+    .project-image {
+        max-height: 250px;
+    }
+
+    .project-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .details-wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
+}

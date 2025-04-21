@@ -1,0 +1,108 @@
+/* Background Styling */
+.home-wrapper {
+    width: calc(100% - 20%);
+    height: 100vh;
+    margin-left: 20%;
+    background-image: url("https://wallpaperaccess.com/full/3239480.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+/* Text Content */
+.home-wrapper h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    width: 100%;
+}
+
+/* Name Gradient Effect */
+.home-wrapper h1:first-child {
+    background: linear-gradient(to right, #ff8c00, #ff0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Designation Styling */
+.home-wrapper h1:last-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+/* Animated Underline */
+.home-wrapper h1:last-child::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #ff8c00, #de59a9);
+    display: flex;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets (≤1024px) */
+@media (max-width: 1024px) {
+    .home-wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+    .home-wrapper h1 {
+        font-size: 2.5rem;
+    }
+    .home-wrapper h1:last-child {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small Tablets (≤768px) */
+@media (max-width: 768px) {
+    .home-wrapper h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile Phones (≤480px) */
+@media (max-width: 480px) {
+    .home-wrapper h1 {
+        font-size: 1.8rem;
+    }
+}
