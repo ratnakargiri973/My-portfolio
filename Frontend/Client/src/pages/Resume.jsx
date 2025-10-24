@@ -121,13 +121,13 @@ function Resume() {
             <li>
               <span>
               <label htmlFor="">Computer Language: </label>
-              <p>Java, Html, CSS, JavaScript</p>
+              <p>Java, Html5, CSS3, JavaScript</p>
               </span>
             </li>
             <li>
               <span>
             <label htmlFor="">Frameworks & Libraries: </label>
-            <p>ReactJS, Redux, Express.JS , Tailwind CSS</p>
+            <p>ReactJS, Redux, Express.JS , Tailwind CSS, Material UI</p>
             </span>
             </li>
             <li>
@@ -139,7 +139,7 @@ function Resume() {
             <li>
               <span>
             <label htmlFor="">Database: </label>
-            <p>MongoDB</p>
+            <p>MongoDB, MySQL</p>
             </span>
             </li>
             <li>
