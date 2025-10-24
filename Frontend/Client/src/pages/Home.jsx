@@ -7,7 +7,6 @@ function Home() {
     "Web Developer",
     "Frontend Developer",
     "Backend Developer",
-    "Mern Stack Developer"
   ])
   const [activeIndex, setActiveIndex] = useState(0)
 
@@ -23,7 +22,7 @@ function Home() {
   return (
     <div className='home-wrapper'>
          <h1 className='font-bold text-white text-6xl'>Ratnakar Giri</h1>
-          <h1 className='font-bold text-white text-4xl'>Aspiring for {designation[activeIndex]}</h1>
+          <h1 className='font-bold text-white text-4xl'>{designation[activeIndex]} at Fidelsya Technology</h1>
     </div>
   )
 }
