@@ -49,7 +49,7 @@ function About() {
           <ul className='skills-list'>
             <li>
               <span className='label'>
-                <label htmlFor="">HTML</label>
+                <label htmlFor="">HTML5</label>
                 <p>95%</p>
               </span>
               <input type="range" name="" id="" value="95" />
@@ -57,7 +57,7 @@ function About() {
 
             <li>
               <span className='label'>
-                <label htmlFor="">CSS</label>
+                <label htmlFor="">CSS3</label>
                 <p>90%</p>
               </span>
               <input type="range" name="" id="" value="90" />
