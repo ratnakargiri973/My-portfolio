@@ -84,7 +84,7 @@ const Contact = () => {
               <Stack direction="row" spacing={2} alignItems="center">
                 <LocationIcon color="primary" />
                 <Typography variant="body1">
-                  Bangalore, Karnataka, India
+                  Bhubaneswar, Odisha, India
                 </Typography>
               </Stack>
             </Stack>
